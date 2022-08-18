@@ -1,0 +1,14 @@
+{
+  "type": "forge:ore_shaped",
+  "group": "hana_story:example",
+  "result": { "item": "minecraft:diamond" },
+  "pattern": [
+    "XYX",
+    "YXY",
+    "XYX"
+  ],
+  "key": {
+    "X": { "item": "hana_story:kana_egg", "data": 0 },
+    "Y": { "type": "forge:ore_dict", "ore": "ingotGold" }
+  }
+}

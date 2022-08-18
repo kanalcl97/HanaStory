@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "normal": {
+      "model": "hana_story:test_block_model"
+    }
+  }
+}

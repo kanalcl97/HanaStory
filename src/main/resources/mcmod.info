@@ -1,0 +1,16 @@
+[
+{
+  "modid": "hana_story",
+  "name": "hana",
+  "description": "A lovely hana planting Mod.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["kana"],
+  "credits": "33",
+  "logoFile": "forestry_logo.png",
+  "screenshots": [],
+  "dependencies": []
+}
+]
