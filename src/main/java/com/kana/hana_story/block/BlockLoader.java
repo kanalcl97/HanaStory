@@ -1,5 +1,6 @@
 package com.kana.hana_story.block;
 
+import com.kana.hana_story.hana_story;
 import com.kana.hana_story.item.ItemLoader;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -21,24 +22,22 @@ import static com.kana.hana_story.item.ItemLoader.HANA_STORY_ITEM_TAB;
  * @decription TODO
  * @date 2022-08-14 0:08
  */
-@Mod.EventBusSubscriber(modid = "hana_story")
+@Mod.EventBusSubscriber(modid = hana_story.MODID)
 public final class BlockLoader {
 
     public static Block myBlock;
 
     @SubscribeEvent
     public static void registerBlock(RegistryEvent.Register<Block> event) {
-        myBlock = new TestBlock().setRegistryName("hana_story", "test_block")
+        myBlock = new TestBlock().setRegistryName(hana_story.MODID, "test_block")
                 .setCreativeTab(HANA_STORY_ITEM_TAB);
         event.getRegistry().register(myBlock);
     }
 
     @SubscribeEvent
     public static void registerItem(RegistryEvent.Register<Item> event) {
-        // 注意这个 ItemBlock 使用了和它对应的方块一样的注册名。
-        // 对于所有有物品形态的方块，其物品的注册名和它自己的注册名需要保持一致。
         event.getRegistry().register(
-                new ItemBlock(myBlock).setRegistryName("hana_story", "test_block")
+                new ItemBlock(myBlock).setRegistryName(hana_story.MODID, "test_block")
         );
     }
 

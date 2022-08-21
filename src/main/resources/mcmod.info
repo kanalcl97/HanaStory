@@ -1,7 +1,7 @@
 [
 {
   "modid": "hana_story",
-  "name": "hana",
+  "name": "hana story",
   "description": "A lovely hana planting Mod.",
   "version": "${version}",
   "mcversion": "${mcversion}",

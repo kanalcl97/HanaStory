@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "hana_story:example",
+  "result": { "item": "hana_story:hana_pie", "count": 4},
+  "pattern": [
+    "XXX",
+    "YZY",
+    "ZYZ"
+  ],
+  "key": {
+    "X": { "item": "minecraft:red_flower", "data": 0 },
+    "Y": { "item": "minecraft:wheat", "data": 0 },
+    "Z": { "item": "minecraft:dye", "data": 9}
+  }
+}

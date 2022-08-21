@@ -1,6 +1,7 @@
 buildscript {
     repositories {
         maven { url = 'https://maven.minecraftforge.net/' }
+
         mavenCentral()
     }
     dependencies {
@@ -31,7 +32,7 @@ minecraft {
     // makeObfSourceJar = false // an Srg named sources jar is made by default. uncomment this to disable.
     
     // accessTransformer = file('src/main/resources/META-INF/accesstransformer.cfg')
-
+    accessTransformer = file('src/main/resources/META-INF/jei_at.cfg')
     // Default run configurations.
     // These can be tweaked, removed, or duplicated as needed.
     runs {
@@ -81,6 +82,23 @@ dependencies {
     // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html
     // http://www.gradle.org/docs/current/userguide/dependency_management.html
 
+
+    // compile against the JEI API but do not include it at runtime
+    compileOnly fg.deobf("mezz.jei:jei_$minecraft_version:$jei_version:api")
+	//runtimeOnly fg.deobf("mezz.jei:jei_$minecraft_version:$jei_version")
+}
+
+repositories {
+    maven {
+        // location of the maven that hosts JEI files
+        name = "JEI"
+        url = "https://dvs1.progwml6.com/files/maven/"
+    }
+    maven {
+        // location of a maven mirror for JEI files, as a fallback
+        name = "ModMaven"
+        url = "https://modmaven.dev"
+    }
 }
 
 // Example for how to get properties into the manifest for reading by the runtime..
