@@ -2,3 +2,4 @@ item.hana_story:kana_egg.name=Kana'sEgg
 item.hana_story:hana_pie.name=Hana Pie
 tile.grassBlock.name=Grassss
 itemGroup.hanaStory Items=HanaStory Items
+container.hana_story.simpletitle=I am title

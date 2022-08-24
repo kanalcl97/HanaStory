@@ -6,10 +6,10 @@ import net.minecraft.block.material.Material;
  * @decription TODO
  * @date 2022-08-13 21:42
  */
-public class TestBlock extends Block{
+public class TestBlock extends HanaBlockBase{
     public TestBlock()
     {
-        super(Material.GROUND);
+        super(Material.GROUND, "test_block");
         this.setUnlocalizedName("grassBlock");
         this.setHardness(0.5F);
     }

@@ -15,6 +15,9 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import static com.kana.hana_story.item.ItemLoader.HANA_STORY_ITEM_TAB;
 
 /**
@@ -25,13 +28,14 @@ import static com.kana.hana_story.item.ItemLoader.HANA_STORY_ITEM_TAB;
 @Mod.EventBusSubscriber(modid = hana_story.MODID)
 public final class BlockLoader {
 
-    public static Block myBlock;
+    public static TestBlock myBlock;
+    public static WiredBlock wb;
 
     @SubscribeEvent
     public static void registerBlock(RegistryEvent.Register<Block> event) {
-        myBlock = new TestBlock().setRegistryName(hana_story.MODID, "test_block")
-                .setCreativeTab(HANA_STORY_ITEM_TAB);
-        event.getRegistry().register(myBlock);
+        myBlock = new TestBlock();
+        wb = new WiredBlock();
+        event.getRegistry().registerAll(myBlock, wb);
     }
 
     @SubscribeEvent

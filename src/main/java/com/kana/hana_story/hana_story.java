@@ -12,6 +12,8 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 public class hana_story
 {
     public static final String MODID = "hana_story";
+    @Mod.Instance(hana_story.MODID)
+    public static hana_story instance;
 
     @SidedProxy(clientSide = "com.kana.hana_story.client.ClientProxy",
                 serverSide = "com.kana.hana_story.common.CommonProxy")
