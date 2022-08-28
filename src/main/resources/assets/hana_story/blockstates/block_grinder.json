@@ -1,0 +1,12 @@
+{
+  "forge_marker": 1,
+  "variants" : {
+    "normal" : {
+      "model": "hana_story:block_grinder"
+    },
+    "inventory": {
+      "model": "hana_story:block_grinder",
+      "transform": "forge:default-block"
+    }
+  }
+}

@@ -1,5 +1,7 @@
 item.hana_story:kana_egg.name=Kana的蛋
 item.hana_story:hana_pie.name=鲜花饼
 tile.grassBlock.name=艹艹艹方块
+tile.wired_block.name=奇怪的方块
 itemGroup.hanaStory Items=花卉物语物品
 container.hana_story.simpletitle=欸嘿嘿这是GUI哦
+tile.block_grinder.name=研磨机

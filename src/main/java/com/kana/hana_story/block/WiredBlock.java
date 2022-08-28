@@ -12,7 +12,7 @@ import static com.kana.hana_story.item.ItemLoader.HANA_STORY_ITEM_TAB;
  */
 public class WiredBlock extends HanaBlockBase {
     public WiredBlock() {
-        super(Material.SAND, "WiredBlock");
+        super(Material.SAND, "wired_block");
     }
 
     @Override

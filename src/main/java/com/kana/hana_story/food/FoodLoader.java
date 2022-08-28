@@ -14,7 +14,10 @@ import net.minecraftforge.event.RegistryEvent;
  */
 public class FoodLoader {
 
-    public hanaPie hanap;
+    public static hanaPie hanap;
+
+
+
     public FoodLoader()
     {
         hanap = new hanaPie(1,2,false);

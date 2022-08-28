@@ -1,5 +1,7 @@
 item.hana_story:kana_egg.name=Kana'sEgg
 item.hana_story:hana_pie.name=Hana Pie
-tile.grassBlock.name=Grassss
+tile.test_block.name=Grassss
+tile.wired_block.name=WiredBlock
+tile.block_grinder.name=Grinder
 itemGroup.hanaStory Items=HanaStory Items
 container.hana_story.simpletitle=I am title

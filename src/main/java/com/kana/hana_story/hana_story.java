@@ -1,6 +1,7 @@
 package com.kana.hana_story;
 
 import com.kana.hana_story.common.CommonProxy;
+import com.kana.hana_story.recipe.ExtractorRecipe;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.SidedProxy;
@@ -14,6 +15,8 @@ public class hana_story
     public static final String MODID = "hana_story";
     @Mod.Instance(hana_story.MODID)
     public static hana_story instance;
+
+    public ExtractorRecipe extractorRecipe;
 
     @SidedProxy(clientSide = "com.kana.hana_story.client.ClientProxy",
                 serverSide = "com.kana.hana_story.common.CommonProxy")

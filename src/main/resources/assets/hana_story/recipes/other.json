@@ -1,7 +1,7 @@
 {
   "type": "forge:ore_shaped",
   "group": "hana_story:example",
-  "result": { "item": "minecraft:diamond" },
+  "result": { "item": "minecraft:pumpkin" },
   "pattern": [
     "XYX",
     "YXY",
